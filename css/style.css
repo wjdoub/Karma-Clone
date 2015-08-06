@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -427,23 +433,28 @@ th {
 }
 body {
     background-color: LightGray;
+    font-family: 'Roboto', sans-serif; 
 }
 div {
     border: 1px solid Chocolate;
+}
+.content {
+  margin: 0 auto;
+  padding: 0px 15px;
+  width: 970px;
 }
 /* Navigation Section */
 .top-navigation {
   background-color: #fff;
 }
 .top-navigation > .content {
-  width: 970px;
   height: 70px;
-  margin: 0 auto;
-  padding: 0px 15px;
+}
+.top-navigation .logo {
+  margin-top: 13px;
 }
 .top-navigation .links {
   float: right;
-  font-family: 'Roboto', sans-serif; 
   font-size: 16px; 
   color: #838994; 
   letter-spacing: 0.03em;
@@ -456,9 +467,49 @@ div {
 }
 .top-navigation .links > .active {
     color: #4c5058;
-    font-weight: 600;
+    font-weight: 500;
 }
 .top-navigation .links li:hover {
     cursor: pointer;
     color: #333333;
 }
+.introduction {
+  background-image: url("../karmabg.jpeg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;  
+}
+.introduction h1 {
+  margin-top: 13rem;
+  font-size: 3.125rem;
+  font-weight: 200;
+}
+.introduction h1, .introduction h3 {
+  color: white;
+  text-align: center;
+}
+.introduction h3 {
+  font-size: 1.5rem;
+  margin-top: -1rem;
+  font-weight: 100;
+}
+.big-button {
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 16px 26px;
+  line-height: 1.33; 
+  color: white;
+  background-color: #f15a29;
+  display: block;
+  margin: 0 auto;
+  width: 9.688rem;
+  font-size:1.125rem;
+  font-weight: 100
+}
+.big-button:hover {
+  background-color: #FF4719;
+  cursor: pointer;
+}
+
