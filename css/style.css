@@ -435,7 +435,7 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 div {
-    border: 1px solid Chocolate;
+    border: 1px Solid Chocolate;
 }
 .content {
   margin: 0 auto;
