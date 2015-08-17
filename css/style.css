@@ -446,6 +446,9 @@ div {
 /* Navigation Section */
 .top-navigation {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 .top-navigation > .content {
   height: 70px;
@@ -511,5 +514,16 @@ div {
 .big-button:hover {
   background-color: #FF4719;
   cursor: pointer;
+}
+.cases {
+  text-align: center;
+}
+.cases .devices li {
+  width: 33.3333333%;
+  display: inline-block;
+  /* styles to assist with debugging */
+  box-sizing: border-box;
+  height: 4em;
+  float: left;
 }
 
